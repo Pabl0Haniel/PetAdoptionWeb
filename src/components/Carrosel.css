@@ -1,0 +1,36 @@
+.carousel-inner {
+  position: relative;
+  height: 800px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner {
+    height: auto;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    bottom: 50px; /* Ajuste para que a legenda fique logo acima dos traços/indicadores */
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    z-index: 10;
+    width: calc(100% - 40px);
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-caption {
+      bottom: 40px; /* Ajuste para telas menores */
+      left: 10px;
+      padding: 5px;
+      width: calc(100% - 20px);
+    }
+  }
+ 
+}
